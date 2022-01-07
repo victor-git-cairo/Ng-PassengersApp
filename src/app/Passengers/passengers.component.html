@@ -1,0 +1,7 @@
+<div>
+    <app-passenger-edit></app-passenger-edit>
+    <app-passenger-info (updateCustomer)="customerUpdate($event)"></app-passenger-info>
+    <div *ngIf="toggleUpdateForm">
+       <app-passenger-details [passengerInfo]="selectedPassenger" (hideUpdateForm)="toggleUpdateDialog($event)"></app-passenger-details>  
+    </div>   
+ </div>

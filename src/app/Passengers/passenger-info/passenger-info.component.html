@@ -1,0 +1,24 @@
+<p>Passenger Information ... </p>
+
+<table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>LastName</th>
+      <th>Origin</th>
+      <th>Age</th>
+      <th class="custom">Destination </th>
+      <th>Operations</th>
+    </tr>
+    <tr *ngFor="let passenger of passengers">
+      <td>{{ passenger.id }}</td>
+      <td>{{ passenger.name }}</td>
+      <td>{{ passenger.lastName }}</td>
+      <td>{{ passenger.origin }}</td>
+      <td>{{ passenger.destination }}</td>
+      <td><button (click) ="updatePassenger(passenger.id)">Update</button></td>      
+      <td><button (click) ="deletePassenger(passenger.id)">Delete</button></td>      
+    </tr>
+  </table>
+
+

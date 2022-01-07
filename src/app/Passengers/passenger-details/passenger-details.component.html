@@ -1,0 +1,12 @@
+<div>
+    <p>Update Passenger ...</p>
+
+    <p>Traveler Id: {{passengerInfo.id}}</p>
+    <p>Name: <input [(ngModel)]="passengerInfo.name"></p>
+    <p>LastName: <input [(ngModel)]="passengerInfo.lastName"></p>
+    <p>City: <input [(ngModel)]="passengerInfo.origin"></p>
+    <p>Destination: <input [(ngModel)]="passengerInfo.destination"></p>
+    
+    <button (click)="updatePassenger()">Update</button> 
+</div>
+
